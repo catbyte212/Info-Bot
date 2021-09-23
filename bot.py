@@ -32,9 +32,8 @@ HELP_TEXT = """
 """
 ABOUT_TEXT = """
 - **Bot :** `Info Bot`
-- **Creator :** [Vivek](https://telegram.me/Vivek_KERALA)
 - **Credits :** `Everyone in this journey`
-- **Source :** [Click here](https://github.com/vivek-tp/Info-Bot)
+- **Source :** [Click here](https://github.com/catbyte212/Info-Bot)
 - **Language :** [Python3](https://python.org)
 - **Library :** [Pyrogram v1.2.0](https://pyrogram.org)
 - **Server :** [Heroku](https://heroku.com)
@@ -42,14 +41,14 @@ ABOUT_TEXT = """
 
 BOT_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton(text="SOURCE", url=f"https://github.com/vivek-tp/Info-Bot")
+        InlineKeyboardButton(text="Join Group", url=f"https://t.me/rumahbotindonesia")
         ]]
     )
 
 
 START_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton(text="SOURCE", url=f"https://github.com/vivek-tp/Info-Bot")
+        InlineKeyboardButton(text="Join Group", url=f"https://t.me/rumahbotindonesia")
         ]]
     )
                 
@@ -122,7 +121,7 @@ async def id(bot, update):
 
 print(
     """
-Bot Started!!! Now Join on @Vkprojects
+Bot Started!!!
 """
 )
 
