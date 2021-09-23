@@ -26,7 +26,7 @@ HELP_TEXT = """
 
 • Balas /info dari suatu Pesan untuk mengetahui **Detail Pesan**
 
-• Gunakan perintah /info Command untuk mengetahui **Detail kamu**
+• Gunakan perintah /info untuk mengetahui **Detail kamu**
 
 • Gunakan /id di Group atau Channel untuk mendapatkan **Unique Telegram ID**
 """
