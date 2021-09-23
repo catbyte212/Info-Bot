@@ -13,9 +13,9 @@ Bot = Client(
 )
 
 START_TEXT = """
-<b>Hello {}
+<b>Hai Kak {}!</b>
 
-I am a Simple Telegram Info Gathering Bot, Click /help to know my Commands and my uses<b>
+Aku adalah Bot Telegram sederhana untuk menampilkan INFO, Ketik /help untuk melihat daftar perintah dan cara penggunaan.
 """
 HELP_TEXT = """
 🤔 How to use me?
