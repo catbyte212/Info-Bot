@@ -18,17 +18,17 @@ START_TEXT = """
 Aku adalah Bot Telegram sederhana untuk menampilkan INFO, Ketik /help untuk melihat daftar perintah dan cara penggunaan.
 """
 HELP_TEXT = """
-🤔 How to use me?
+🤔 Penggunaan?
 
-• Forward a Message for take it's Details (in Private)
+• Forward Pesan untuk mengetahui **Detailnya** (secara Private)
 
-• Send any Media to take its Details (in private)
+• Kirim **Media** apapun untuk mengetahui **Detailnya** (secara private)
 
-• Reply /info to a Message to take Message Details
+• Balas /info dari suatu Pesan untuk mengetahui **Detail Pesan**
 
-• Use /info Command to take your Details
+• Gunakan perintah /info Command untuk mengetahui **Detail kamu**
 
-• Use /id in Group or Channel to get Unique Telegram ID
+• Gunakan /id di Group atau Channel untuk mendapatkan **Unique Telegram ID**
 """
 ABOUT_TEXT = """
 - **Bot :** `Info Bot`
@@ -90,15 +90,15 @@ async def info(bot, update):
     else:
         last_name = "None"
     text = f"""
-**🙋🏻‍♂️ First Name :** {update.from_user.first_name}
+**🙋🏻‍♂️ Nama Depan :** {update.from_user.first_name}
 
-**🧖‍♂️ Your Second Name :** {last_name}
+**🧖‍♂️ Nama Belakang :** {last_name}
 
-**🧑🏻‍🎓 Your Username :** {update.from_user.username}
+**🧑🏻‍🎓 Username :** {update.from_user.username}
 
-**🆔 Your Telegram ID :** {update.from_user.id}
+**🆔 ID Telegram :** {update.from_user.id}
 
-**🔗 Your Profile Link :** {update.from_user.mention}
+**🔗 Profile Link :** {update.from_user.mention}
 """ 
     reply_markup = START_BUTTONS
     await update.reply_text(        
@@ -110,7 +110,7 @@ async def info(bot, update):
 @Bot.on_message(filters.private & filters.command("id"))
 async def id(bot, update):
     text = f"""
-**Your Telegram ID :** {update.from_user.id}
+**ID Telegram :** {update.from_user.id}
 """
     reply_markup = START_BUTTONS
     await update.reply_text(        
